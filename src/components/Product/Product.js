@@ -5,7 +5,6 @@ import "./Product.css";
 import { Link } from "react-router-dom";
 
 const Product = (props) => {
-  //  console.log(props);
   const { name, img, seller, price, stock, key } = props.product;
   return (
     <div className="product">
@@ -25,7 +24,6 @@ const Product = (props) => {
         onClick={() => props.handleAddProduct(props.product)}
         >
           <FontAwesomeIcon icon={faShoppingCart} /> add to cart</button>}
-          
       </div>
     </div>
   );

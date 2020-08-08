@@ -1,8 +1,8 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Shop from './components/Shop/Shop';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Review from './components/Review/Review';
 import Inventory from './components/Inventory/Inventory';
 import NotFound from './components/NotFound/NotFound';
@@ -12,7 +12,7 @@ import { AuthContextProvider, PrivateRoute } from './components/Login/useAuth';
 import Shipment from './components/Shipment/Shipment';
 
 function App() {
-	const user = { name: 'kodu Mia', email: 'kodu@chodu.com' };
+	
 	return (
 		<div>
 			<AuthContextProvider>
@@ -25,7 +25,7 @@ function App() {
 						<Route path="/review">
 							<Review></Review>
 						</Route>
-						<Route path="/orders">
+						<Route path="/inventory">
 							<Inventory></Inventory>
 						</Route>
 						<Route exact path="/">

@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const ReviewItem = (props) => {
-//    console.log(props.removeProduct)
 
    const {name, quantity, key, price} = props.product;
    const reviewItemStyle= {
@@ -10,8 +9,6 @@ const ReviewItem = (props) => {
        marginLeft: '200px',
        marginBottom: '5px',
        paddingBottom: '5px',
-       
-
    }
     return (
         <div style={reviewItemStyle}>

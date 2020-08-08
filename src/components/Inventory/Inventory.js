@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Inventory = () => {
+	const handleAddInventory = () => {}
 	return (
 		<div>
-			<h2>Order History comming soon....</h2>
+			<h2>Add inventory to sell more....</h2>
+			<button onClick={handleAddInventory}>Add Inventory</button>
 		</div>
 	);
 };

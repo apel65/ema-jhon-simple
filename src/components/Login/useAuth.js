@@ -6,7 +6,6 @@ import { useState } from "react";
 import { createContext } from "react";
 import { useContext } from 'react';
 import { useEffect } from 'react';
-import { getDatabaseCart } from '../../utilities/databaseManager';
 import { Route, Redirect } from "react-router-dom";
 
 firebase.initializeApp(firebaseConfig);

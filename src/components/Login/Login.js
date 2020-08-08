@@ -1,13 +1,9 @@
 import React from 'react';
 import Auth from './useAuth';
-import { useEffect } from 'react';
 
 const Login = () => {
     const auth = Auth();
-    
-    // useEffect( () => {
-    //     console.log(auth.user)
-    // })
+   
     const handleSignIn = () => {
         auth.signInWithGoogle()
         .then(res => {
